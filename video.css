@@ -1,6 +1,10 @@
 
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
     .thumbnail-1{
         width: 100%;
+    }
+    .videoImage{
+        position: relative;
     }
     .videoDetails{
         /* margin-top: 2%; */
@@ -34,4 +38,58 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 20px;
         column-gap: 16px;
+        background-color: #f4f3f3;
+    }
+    .timeStamp{
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 8px;
+        right: 5px;
+        font-size:13px;
+        font-family: Roboto , Arial;
+        padding: 4px 2px 4px 2px;
+        border-radius: 2px;
+    }
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr ;
+            row-gap: 20px;
+            column-gap: 16px;
+            background-color: #f4f3f3;
+        }
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 16px;
+            background-color: #f4f3f3;
+        }
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 16px;
+            background-color: #f4f3f3;
+        }
+    }
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 16px;
+            background-color: #f4f3f3;
+        }
     }
